@@ -16,6 +16,11 @@ $(document).ready(function() {
 			infinite: true,
 			autoplay: false,
 			autoplaySpeed: 3000,
+            responsive: {
+                0: { slidesToShow: 1 },   // Phones
+                600: { slidesToShow: 1 }, // Tablets
+                1024: { slidesToShow: 1 } // Laptops & desktops
+            }
     }
 
 		// Initialize all div with carousel class

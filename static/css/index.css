@@ -116,12 +116,15 @@ body {
     width: 100%;
     max-width: 800px;
     margin: auto;
-    scroll-snap-type: x mandatory; /* Ensures snapping for smooth navigation */
+    /*scroll-snap-type: x mandatory; !* Ensures snapping for smooth navigation *!*/
+    /*max-width: 200vw; !* Prevent multiple images from appearing on wide screens *!*/
+
 }
 
 .results-carousel .item {
+    min-width: 100%;
     flex: 0 0 100%; /* Each item takes full width */
-    scroll-snap-align: start; /* Ensures each item snaps into place */
+    /*scroll-snap-align: start; !* Ensures each item snaps into place *!*/
 }
 
 .results-carousel .item img {
