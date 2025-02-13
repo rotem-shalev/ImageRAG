@@ -116,17 +116,12 @@ body {
     width: 100%;
     max-width: 800px;
     margin: auto;
+    scroll-snap-type: x mandatory; /* Ensures snapping for smooth navigation */
 }
 
 .results-carousel .item {
     flex: 0 0 100%; /* Each item takes full width */
-    /*transition: transform 0.5s ease-in-out;*/
-  /*margin: 1px;*/
-  /*overflow: hidden;*/
-  /*!*border: 1px solid #bbb;*!*/
-  /*border-radius: 10px;*/
-  /*padding: 0;*/
-  /*font-size: 0;*/
+    scroll-snap-align: start; /* Ensures each item snaps into place */
 }
 
 .results-carousel .item img {
